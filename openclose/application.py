@@ -48,6 +48,8 @@ async def handle(request):
         await h.github_replace_labels_with(session, owner, repo, number,
                                            "Status:*", new_status_label,
                                            True)
+        await h.github_delete_labels_on_issue_with_globs(session, owner, repo,
+                                                         number, "Merge Now")
     return web.Response(text="Done")
 
 check_signature_middleware = \

@@ -11,7 +11,7 @@ GITHUB_SECRET = os.environ['GITHUB_SECRET'].encode('utf8')
 LOGGER = getLogger("github_webhook_pr_labelling")
 TIMEOUT = ClientTimeout(total=20)
 AUTH = BasicAuth(GITHUB_USER, GITHUB_PASS)
-IGNORE_CONTEXT_GLOBS = ["mergify*"]
+IGNORE_CONTEXT_GLOBS = ["mergify*", "Mergify*", "pr ready to merge"]
 
 
 async def handle(request):
