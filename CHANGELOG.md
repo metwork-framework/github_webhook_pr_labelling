@@ -1,10 +1,6 @@
-<a name=""></a>
-# (unreleased)
+<a name="unreleased"></a>
+## [Unreleased]
 
-
-### Features
-
-* first version ([dfe77ca](https://github.com/metwork-framework/github_webhook_pr_labelling/commit/dfe77ca))
-
-
+### Feat
+- first version
 
